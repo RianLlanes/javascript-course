@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>8h</title>
+  <title>9j</title>
 </head>
 <body>
 
@@ -82,11 +82,16 @@
       console.log(calculation);
 
       localStorage.setItem('calculation', JSON.stringify(calculation));
+      updateCalculationElement();
     }
 
     document.querySelector('.js-calculation').innerHTML = calculation;
     
+    function updateCalculationElement() {
+      document.querySelector('.js-calculation').innerHTML = calculation;
+    }
 
+    updateCalculationElement();
   </script>
 </body>
 </html>
